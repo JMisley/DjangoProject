@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <title>Password Generator</title>
+
+    <body>
+
+    <div class="layer1 center w3-content w3-container w3-padding w3-text-white w3-card-4"
+         style="max-width: 435px; margin-top: 46px">
+        <h1 class="w3-center w3-container w3-round-large" style="background-color: #121212">
+            Password
+            Generator </h1>
+
+        <div class="w3-container w3-left w3-container w3-round-large"
+             style="width: 400px; text-align: center; padding: 32px">
+            <h3 class="w3-text-blue">Complexity Features</h3>
+
+            <form action=" {% url 'pw_result' %} ">
+                <label>
+                    <select class="w3-button w3-round-large w3-white" name="length" required>
+                        <option value=""> Select desired password length</option>
+                        <option value="8"> 8 characters</option>
+                        <option value="10"> 10 characters</option>
+                        <option value="12"> 12 characters</option>
+                        <option value="14"> 14 characters</option>
+                        <option value="16"> 16 characters</option>
+                        <option value="18"> 18 characters</option>
+                        <option value="20"> 20 characters</option>
+                    </select>
+                </label>
+
+                <br><br>
+                <div style="padding-left: 40px; text-align: left">
+                    <label>
+                        <input class="w3-check" type="checkbox" name="uppercaseCheckbox">
+                        Include Uppercase Letters
+                    </label>
+
+                    <br><br>
+                    <label>
+                        <input class="w3-check" type="checkbox" name="numbersCheckbox">
+                        Include Numbers
+                    </label>
+
+                    <br><br>
+                    <label>
+                        <input class="w3-check" type="checkbox" name="specialCheckbox">
+                        Include Special Characters
+                    </label>
+                </div>
+
+                <br><br>
+                <button class="w3-button w3-blue w3-round-large">Generate Password</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

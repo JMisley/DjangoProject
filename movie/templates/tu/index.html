@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <style>
+        .star-style {
+            color: yellow;
+        }
+
+        .center-hor {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            padding-left: 133px;
+            padding-bottom: 30px;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+    <title>Movie List</title>
+    <div>
+        {% for m in movies %}
+            <div style="display: flex; position:relative; color: white" class="w3-card-4 w3-half">
+                <div>
+                    <img src="media/{{ m.movie_poster }}" height="200px" width="133px" alt="">
+                </div>
+                <div class="center-hor">
+                    <p>{{ m.title }} ({{ m.year }})</p>
+                    <p style="font-size: 9pt; margin-top: -10px">Director: {{ m.director }}</p>
+                    <div style="display: flex">
+                        {% for i in 1|center:10 %}
+                            {% if forloop.counter <= m.rating %}
+                                <i class="star-style fa-solid fa-star"></i>
+                            {% else %}
+                                <i class="fa-solid fa-star"></i>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

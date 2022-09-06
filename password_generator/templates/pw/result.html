@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <style>
+        .complete-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%)
+        }
+
+        .scrollable-textbox {
+            height: 120px;
+            width: 250px;
+            border: 3px solid #2196f3;
+            overflow: auto;
+            white-space: pre-line;
+            margin: auto;
+            text-align: center;
+        }
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px white;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: white;
+            border-radius: 15px;
+        }
+    </style>
+
+    <title>Result</title>
+
+    <div class="layer1 complete-center w3-container w3-padding w3-center w3-round-medium">
+        <h2 class="w3-container w3-round-large" style="background-color: #121212; color: #2196f3">
+            Selected password
+            length: {{ length }}</h2>
+        <h3>Generated Passwords </h3>
+
+        <p class="layer2 scrollable-textbox w3-round-large" id="password_display">{{ generated_password }}</p>
+        <br>
+
+        <!--suppress HtmlUnknownTarget -->
+        <a class="w3-button w3-round-large w3-blue" href="{% url 'pw_home' %}">Return to menu</a>
+    </div>
+{% endblock %}

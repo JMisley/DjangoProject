@@ -1,0 +1,118 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+            background-color: #121212;
+
+            -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Old versions of Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+        }
+
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .layer1 {
+            color: white;
+            background-color: #252525;
+        }
+
+        .layer2 {
+            color: white;
+            background-color: #3b3b3b;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 3px solid #ccc;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            outline: none;
+        }
+
+        input:hover {
+            background-color: rgba(19, 150, 188, 0.11);
+        }
+
+        input:focus-within {
+            background-color: rgba(19, 150, 188, 0.03);
+        }
+
+        .w3-button {
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+           href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                class="fa fa-bars"></i></a>
+        <a href="{% url 'mo_home' %}" class="w3-bar-item w3-button w3-padding-large">MOVIES</a>
+        <a href="{% url 'mo_add_movie' %}" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ADD MOVIE</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-padding-large w3-button" title="More">EXTRAS <i class="fa fa-caret-down"></i></button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="{% url 'pw_home' %}" class="w3-bar-item w3-button">PASSWORD GENERATOR</a>
+                <a href="{% url 'dg_home' %}" class="w3-bar-item w3-button">DICE GAME</a>
+            </div>
+        </div>
+        <a href="{{ 'admin' }}" class="w3-padding-large w3-button w3-hide-small w3-right">LOGIN</a>
+    </div>
+</div>
+
+<!-- navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="{{ 'admin' }}" class="w3-bar-item w3-button w3-padding-large">LOGIN</a>
+    <a href="{% url 'mo_add_movie' %}" class="w3-bar-item w3-button w3-padding-large">ADD MOVIE</a>
+    <a href="{% url 'pw_home' %}" class="w3-bar-item w3-button w3-padding-large">PASSWORD GENERATOR</a>
+    <a href="{% url 'dg_home' %}" class="w3-bar-item w3-button w3-padding-large">DICE GAME</a>
+</div>
+
+<!-- page content goes here -->
+<div style="margin-top: 46px">
+    {% block content %}
+    {% endblock %}
+</div>
+
+<script>
+    function myFunction() {
+        let x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") === -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+    let modal = document.getElementById('ticketModal');
+    window.onclick = function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
