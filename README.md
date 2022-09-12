@@ -17,8 +17,8 @@ TBA
 
 | | |
 |----|----|
-|![log movie](https://user-images.githubusercontent.com/89669123/189716611-55d4e791-ac7c-4a7c-94f9-ad5abbc22e3f.png)|
-![pwgen](https://user-images.githubusercontent.com/89669123/189716575-7f7a4755-3757-4fdf-9171-3d841590b8d1.png)|
+|<img width="1128" alt="log movie" src="https://user-images.githubusercontent.com/89669123/189716611-55d4e791-ac7c-4a7c-94f9-ad5abbc22e3f.png">|
+<img width="1128" alt="pwgen" src="https://user-images.githubusercontent.com/89669123/189716575-7f7a4755-3757-4fdf-9171-3d841590b8d1.png">|
 
 | | |
 |----|----|
