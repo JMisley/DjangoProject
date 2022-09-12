@@ -18,7 +18,7 @@ Download the project and open it in an IDE. Open a terminal and type ```python m
 
 <img width="1128" alt="log movie" src="https://user-images.githubusercontent.com/89669123/189716611-55d4e791-ac7c-4a7c-94f9-ad5abbc22e3f.png">
 <br/>
-![admin](https://user-images.githubusercontent.com/89669123/189717560-f8b7791f-b6e0-42c8-a4a9-3a28cec6ce89.png)
+<img width="1128" alt="admin" src="https://user-images.githubusercontent.com/89669123/189717560-f8b7791f-b6e0-42c8-a4a9-3a28cec6ce89.png">
 
 ## Contributors
 
