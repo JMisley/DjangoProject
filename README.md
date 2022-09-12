@@ -15,14 +15,7 @@ TBA
 
 ## Screenshots
 
-| | |
-|----|----|
-|<img width="1128" alt="log movie" src="https://user-images.githubusercontent.com/89669123/189716611-55d4e791-ac7c-4a7c-94f9-ad5abbc22e3f.png">|
-<img width="1128" alt="pwgen" src="https://user-images.githubusercontent.com/89669123/189716575-7f7a4755-3757-4fdf-9171-3d841590b8d1.png">|
-
-| | |
-|----|----|
-|![dice game](https://user-images.githubusercontent.com/89669123/189716927-3de848f8-ba80-4059-a5d1-7ee9e0def325.png)|
+|<img width="1128" alt="log movie" src="https://user-images.githubusercontent.com/89669123/189716611-55d4e791-ac7c-4a7c-94f9-ad5abbc22e3f.png">
 ![admin](https://user-images.githubusercontent.com/89669123/189717560-f8b7791f-b6e0-42c8-a4a9-3a28cec6ce89.png)|
 
 ## Contributors
