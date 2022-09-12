@@ -20,6 +20,10 @@ Download the project and open it in an IDE. Open a terminal and type ```python m
 |----|----|
 |<img width="1128" alt="log movie" src="https://user-images.githubusercontent.com/89669123/189716611-55d4e791-ac7c-4a7c-94f9-ad5abbc22e3f.png">|<img width="1128" alt="admin" src="https://user-images.githubusercontent.com/89669123/189717560-f8b7791f-b6e0-42c8-a4a9-3a28cec6ce89.png">|
 
+| | |
+|----|----|
+|<img width="1128" alt="dice game" src="https://user-images.githubusercontent.com/89669123/189719447-303ad8b2-0c13-4da0-826d-8d1f99e9f81a.png">|<img width="1128" alt="pwgen" src="https://user-images.githubusercontent.com/89669123/189719656-c8564078-604e-45ca-9292-33a749799a6d.png">|
+
 ## Contributors
 
 John Misley
